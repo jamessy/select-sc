@@ -2,6 +2,295 @@
 
 
 
+/* Header 
+===============================================*/
+.panel-search{
+    margin-top: 5px;
+
+    form{
+        position: relative;
+
+        .form-control{
+            border-radius:35px;
+            border:1px solid darken(@grey, 50%);
+            height: 54px;
+            width:100%;
+            background-color: @grey;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .button--green{
+            position: absolute;
+            right: 5px;
+            top:5px;
+            height:44px;
+            width: 44px;
+            color:#fff;
+            font-size: 24px;
+        }
+
+
+    }
+}
+
+.panel-logo{
+    margin-bottom: 30px;
+}
+
+.panel-lang-list{
+    margin:15px 0;
+
+    li{
+        line-height: 1.2em;
+
+        a{
+            color:@green-dirty;
+            font-size: 16px;
+        }
+    }
+
+    li:nth-of-type(1){
+        border-right:1px solid @green-dirty;
+        padding-right: 9px;
+    }
+}
+
+.panel-access-wrapper{
+    border-top:1px solid @green;
+    border-bottom: 1px solid @green;
+    border-right: 1px solid @green;
+
+    @media (min-width: @grid-float-breakpoint) {
+        margin:0px;
+    }
+
+    .panels-access{
+        color:#999999;
+        border-left: 1px solid @green;
+        padding-top:10px;
+        padding-bottom: 8px;
+
+        span{
+            font-size: 16px;
+            line-height: 0.9em!important;
+            text-transform: uppercase!important;
+            display: inline-block;
+        }
+    }   
+}
+
+.icon{
+    padding-left:47px;
+    margin-left: 10px;
+    height:32px;
+}
+
+.icon-scale{
+    background: url(/images/icon-scale.png) no-repeat 8px 1px;
+}
+.icon-users{
+    background: url(/images/icon-users.png) no-repeat 0 0;
+    padding-left: 45px;
+    margin-left: 5px;
+}
+.icon-tube{
+    background: url(/images/icon-tube.png) no-repeat 10px 0;
+    padding-left: 44px;
+}
+.icon-watch{
+    background: url(/images/icon-watch.png) no-repeat 22px -2px;
+    padding-left:55px;
+}
+.icon-tick{
+    background: url(/images/icon-tick.png) no-repeat 45px 0;
+    padding-left:80px;
+}
+
+
+
+/* Navigation 
+===============================================*/
+.nav-large{
+    margin:0px;
+    padding: 0px;
+
+    li{
+        margin:0px;
+        padding: 0px;    
+    }
+}
+
+.navbar-default{
+    border:none!important;
+    box-shadow: none!important;
+}
+
+.navbar-collapse{
+    padding-left:0px;
+    padding-right: 0px;
+}
+
+.nav{
+
+    li.dropdown{
+
+        > a{
+            background-color: @grey;
+            font-weight: 500;
+            color:#022222;
+        }
+
+        &:hover{
+            > a{
+                background-color: @green;
+                color:#fff;  
+            }
+        }
+    }
+
+    a{
+        font-size: 19px;
+
+    }
+
+    .dropdown-menu{
+        background-color: @green;
+        border:none;
+        border-radius: 0;
+        box-shadow: none;
+
+        > a{
+            color:#fff!important;
+        }
+    }
+}
+
+.navbar-right{
+    background-color: @grey;
+    height: 50px;
+    padding:15px 10px 15px 0;
+
+    li {
+        padding-left: 10px;
+
+        a{
+            color:#022222!important;
+            padding:0px;
+
+            &:hover{
+                color:@green!important;
+                text-decoration: underline;
+            }
+        }
+
+        .glyphicon{
+            color:@green;
+            font-size: 20px;
+            float: right;
+            margin-left: 6px;
+            margin-top: -1px;
+        }
+    }
+
+    li:nth-of-type(1){
+        border-right:1px solid @grey-dark;
+        padding-right: 10px;
+    }
+}
+
+.dropdown-menu-large{
+    background-color: #f5f5f5!important ;
+}
+
+.dropdown-submenu{
+
+    > a{
+
+        &:hover{
+            background-color: @green-med!important;
+            color:#fff!important;
+        }
+    }
+}
+
+.nav-panels{
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    h4{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 3px;
+        position: relative;
+        padding-bottom: 5px;
+        .transition(all 0.3s ease-in-out);
+
+        &:after{
+            position: absolute;
+            .transition(all 0.2s ease-in-out);    
+            width:0%;
+            height: 2px;
+            background-color: transparent;
+            content: '';
+            left:50%;
+            bottom:0px;
+        }
+    }
+
+    p{
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+
+    a{
+        display: block;
+        color:@green!important;
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+
+    &:hover{
+        //background-color: lighten(@grey, 10%);
+
+        h4{
+            color:@green-med;
+
+            &:after{
+                background-color: @green-med;
+                width:100%;
+                left:0%;
+                content:'';
+            }
+        }
+    }
+}
+
+
+
+/* Button Modifiers
+===============================================*/
+.button--green{
+    background-color: @green;
+    border:none;
+}
+
+
+
+/* Classes 
+===============================================*/
+.form-control::-webkit-input-placeholder { 
+    color: #000000!important; 
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: @green-med transparent transparent transparent;
+}
+
 /* Custom Grid 
 ===============================================*/
 .col-xs-5ths,
