@@ -9,6 +9,10 @@
 
 .container {
   .container-fixed();
+  @media(min-width:@screen-md-min){
+      padding-left: 0px!important;
+      padding-right: 0px!important;
+  }
 
   @media (min-width: @screen-sm-min) {
     width: @container-sm;

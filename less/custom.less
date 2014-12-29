@@ -170,6 +170,7 @@
         border:none;
         border-radius: 0;
         box-shadow: none;
+        padding-left:20px;
 
         > a{
             color:#fff!important;
@@ -181,6 +182,10 @@
     background-color: @grey;
     height: 50px;
     padding:15px 10px 15px 0;
+
+    @media(min-width:@grid-float-breakpoint){
+        margin-right: 20px;   
+    }
 
     li {
         padding-left: 10px;
@@ -277,6 +282,42 @@
     }
 }
 
+/* Footer 
+===============================================*/
+.footer-lv-2{
+    background-color: @green;
+    color:#fff;
+
+    .subscriber-text{
+        font-size: 22px;
+        font-weight: bold;
+        display: inline-block;
+        padding-left: 42px;
+        padding-right: 45px;
+        position: relative;
+
+        &:before{
+            background: url(/images/quote-start.png) 0 0 no-repeat;
+            content: '';
+            position: absolute;
+            top: 0px;
+            width: 33px;
+            height: 27px;
+            left: 0px;
+        }
+
+        &:after{
+            background: url(/images/quote-finish.png) 0 0 no-repeat;
+            content: '';
+            position: absolute;
+            top: 2px;
+            width: 33px;
+            height: 27px;
+            right: 0px;
+        }
+    }
+}
+
 
 
 /* Button Modifiers
@@ -294,12 +335,25 @@
     color: #000000!important; 
 }
 
+.g-br{
+    background-color: @green;
+}
+
+.container-pad{
+    padding:20px;
+}
+
 .triangle{
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 15px 15px 0 15px;
     border-color: @green-med transparent transparent transparent;
+}
+
+.no-mar-lr{
+    margin-left: 0px!important;
+    margin-right: 0px!important;
 }
 
 /* Custom Grid 
@@ -333,4 +387,8 @@
         width: 20%;
         float: left;
     }
+}
+
+.container{
+
 }
