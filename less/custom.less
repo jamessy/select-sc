@@ -60,6 +60,7 @@
     border-top:1px solid @green;
     border-bottom: 1px solid @green;
     border-right: 1px solid @green;
+    background-color: #fff;
 
     @media (min-width: @grid-float-breakpoint) {
         margin:0px;
@@ -78,6 +79,16 @@
             display: inline-block;
         }
     }   
+}
+
+.panel-access-wrapper--navigation{
+    float:left;
+    position: absolute;
+    top:200%;
+    left:0;
+    z-index: 2000;
+    width:100%;
+    display: none;
 }
 
 .icon{

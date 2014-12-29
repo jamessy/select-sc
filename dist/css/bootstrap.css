@@ -3909,6 +3909,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
+.dropdown-submenu:hover ~ .panel-access-wrapper--navigation {
+  top: 400%!important;
+}
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -6479,6 +6482,7 @@ button.close {
   border-top: 1px solid #45cb6c;
   border-bottom: 1px solid #45cb6c;
   border-right: 1px solid #45cb6c;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   .panel-access-wrapper {
@@ -6496,6 +6500,15 @@ button.close {
   line-height: 0.9em!important;
   text-transform: uppercase!important;
   display: inline-block;
+}
+.panel-access-wrapper--navigation {
+  float: left;
+  position: absolute;
+  top: 200%;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  display: none;
 }
 .icon {
   padding-left: 47px;
