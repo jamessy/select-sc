@@ -11,13 +11,9 @@
         position: relative;
 
         .form-control{
-            border-radius:35px;
             border:1px solid darken(@grey, 50%);
-            height: 54px;
             width:100%;
             background-color: @grey;
-            font-size: 19px;
-            font-weight: bold;
         }
 
         .button--green{
@@ -29,8 +25,6 @@
             color:#fff;
             font-size: 24px;
         }
-
-
     }
 }
 
@@ -282,11 +276,17 @@
     }
 }
 
+
 /* Footer 
 ===============================================*/
+#footer{
+    color:#fff
+}
+
 .footer-lv-2{
-    background-color: @green;
-    color:#fff;
+    color:#fff!important;
+    padding-left: 35px!important;
+    padding-right: 35px!important;
 
     .subscriber-text{
         font-size: 22px;
@@ -318,6 +318,90 @@
     }
 }
 
+.footer-lv-3{
+    color:@grey-dark;
+
+
+    .panel-links-footer{
+
+        ul{
+            padding-left:20px;
+        }
+
+        h3{
+            font-size: 22px;
+        }
+
+        li,a{
+            color:@grey-dark;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    #footer-lv-3__inner{
+        padding:10px 20px 20px;
+    }
+}
+
+.panel-social{
+    padding:10px 35px 20px;
+
+    .panel-testimonial-sig{
+
+        @media(min-width:@grid-float-breakpoint){
+            width:20%!important;
+        }
+    }
+}
+
+.panel-email-subscription{
+    @media(min-width:@grid-float-breakpoint){
+        width:80%!important;
+    }   
+}
+
+.panel-social-icons-footer{
+    @media(min-width:@grid-float-breakpoint){
+        width:25%!important;
+    }  
+
+    .footer-icon{
+        .transition(all 0.3s ease-in-out);
+        .opacity(1);
+
+        &:hover{
+            .opacity(0.7);
+        }
+    } 
+}
+
+.panel-footer-logos{
+    
+    .copyright{
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+.email-subscription-form{
+    position: relative;
+    font-size: 16px;
+
+    .button{
+        position: absolute;
+        top:50%;
+        margin-top: -22px;
+        right:5px;
+        padding:0px 30px;
+        font-weight: 300;
+    }
+
+    .large-text-input{
+        font-size: 16px;
+        border:none;
+    }
+}
 
 
 /* Button Modifiers
@@ -327,6 +411,10 @@
     border:none;
 }
 
+.button--green--large{
+    height: 44px;
+    font-size: 22px;
+}
 
 
 /* Classes 
@@ -335,8 +423,28 @@
     color: #000000!important; 
 }
 
+.circular-form-input{
+    border-radius:35px;
+}
+
+.large-text-input{
+    height: 54px;  
+    font-size: 19px;
+    font-weight: bold; 
+    padding-left: 30px;
+}
+
+.testimonial-sig{
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .g-br{
     background-color: @green;
+}
+
+.gr-bg{
+    background-color: #ebebeb;
 }
 
 .container-pad{
@@ -355,6 +463,7 @@
     margin-left: 0px!important;
     margin-right: 0px!important;
 }
+
 
 /* Custom Grid 
 ===============================================*/

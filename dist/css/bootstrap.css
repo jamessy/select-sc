@@ -6451,13 +6451,9 @@ button.close {
   position: relative;
 }
 .panel-search form .form-control {
-  border-radius: 35px;
   border: 1px solid #6b6b6b;
-  height: 54px;
   width: 100%;
   background-color: #ebebeb;
-  font-size: 19px;
-  font-weight: bold;
 }
 .panel-search form .button--green {
   position: absolute;
@@ -6668,9 +6664,13 @@ button.close {
 }
 /* Footer 
 ===============================================*/
+#footer {
+  color: #ffffff;
+}
 .footer-lv-2 {
-  background-color: #45cb6c;
-  color: #fff;
+  color: #fff!important;
+  padding-left: 35px!important;
+  padding-right: 35px!important;
 }
 .footer-lv-2 .subscriber-text {
   font-size: 22px;
@@ -6698,19 +6698,106 @@ button.close {
   height: 27px;
   right: 0px;
 }
+.footer-lv-3 {
+  color: #022222;
+}
+.footer-lv-3 .panel-links-footer ul {
+  padding-left: 20px;
+}
+.footer-lv-3 .panel-links-footer h3 {
+  font-size: 22px;
+}
+.footer-lv-3 .panel-links-footer li,
+.footer-lv-3 .panel-links-footer a {
+  color: #022222;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer-lv-3 #footer-lv-3__inner {
+  padding: 10px 20px 20px;
+}
+.panel-social {
+  padding: 10px 35px 20px;
+}
+@media (min-width: 768px) {
+  .panel-social .panel-testimonial-sig {
+    width: 20%!important;
+  }
+}
+@media (min-width: 768px) {
+  .panel-email-subscription {
+    width: 80%!important;
+  }
+}
+@media (min-width: 768px) {
+  .panel-social-icons-footer {
+    width: 25%!important;
+  }
+}
+.panel-social-icons-footer .footer-icon {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.panel-social-icons-footer .footer-icon:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.panel-footer-logos .copyright {
+  display: block;
+  margin-top: 50px;
+}
+.email-subscription-form {
+  position: relative;
+  font-size: 16px;
+}
+.email-subscription-form .button {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  right: 5px;
+  padding: 0px 30px;
+  font-weight: 300;
+}
+.email-subscription-form .large-text-input {
+  font-size: 16px;
+  border: none;
+}
 /* Button Modifiers
 ===============================================*/
 .button--green {
   background-color: #45cb6c;
   border: none;
 }
+.button--green--large {
+  height: 44px;
+  font-size: 22px;
+}
 /* Classes 
 ===============================================*/
 .form-control::-webkit-input-placeholder {
   color: #000000!important;
 }
+.circular-form-input {
+  border-radius: 35px;
+}
+.large-text-input {
+  height: 54px;
+  font-size: 19px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.testimonial-sig {
+  font-size: 16px;
+  font-weight: bold;
+}
 .g-br {
   background-color: #45cb6c;
+}
+.gr-bg {
+  background-color: #ebebeb;
 }
 .container-pad {
   padding: 20px;
