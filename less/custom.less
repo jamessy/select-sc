@@ -6,6 +6,11 @@
 ===============================================*/
 .panel-search{
     margin-top: 5px;
+    margin-bottom: 30px;
+
+    @media(min-width:@grid-float-breakpoint){
+        margin-bottom: 0px;
+    }
 
     form{
         position: relative;
@@ -57,14 +62,14 @@
 
 .panel-access-wrapper{
     border-bottom: 1px solid @green;
-    border-right: 1px solid @green;
-
-
     background-color: #fff;
+    margin-right: 0px;
+    margin-left: 0px;
 
     @media (min-width: @grid-float-breakpoint) {
         margin:0px;
         border-top:1px solid @green;
+        border-right: 1px solid @green;
     }
 
     .panels-access{
@@ -83,6 +88,10 @@
             line-height: 0.9em!important;
             text-transform: uppercase!important;
             display: inline-block;
+
+            @media(min-width:992px) and (max-width:1199px){
+                font-size: 12px;   
+            }
         }
     }   
 }
@@ -233,10 +242,12 @@
     height: 50px;
     padding:15px 10px 15px 0;
     text-align: center; 
+    margin-top: 20px;
 
     @media(min-width:@grid-float-breakpoint){
         margin-right: 20px;  
         text-align: left; 
+        margin-top: 0px;
     }
 
     li {
@@ -405,12 +416,22 @@
 
 .footer-lv-3{
     color:@grey-dark;
+    text-align: center;
 
+    @media (min-width: @grid-float-breakpoint) {
+        text-align: left;
+    }
 
     .panel-links-footer{
 
         ul{
-            padding-left:20px;
+            list-style-type: none;
+            padding-left:0px;
+
+            @media (min-width: @grid-float-breakpoint) {
+                list-style-type:bullet;
+                padding-left:20px;
+            }
         }
 
         h3{
@@ -454,6 +475,15 @@
 .panel-social-icons-footer{
     padding-bottom: 30px;
 
+    @media (min-width: @grid-float-breakpoint)and (max-width:@screen-lg){
+        padding-left:0px;
+        padding-right: 0px;
+
+        li{
+            padding-left:0px;
+        }
+    }
+
     @media(min-width:@grid-float-breakpoint){
         width:25%!important;
         padding-bottom:0px;
@@ -482,6 +512,10 @@
         display: block;
         margin-top: 50px;
     }
+
+    img{
+        margin-bottom: 20px;
+    }
 }
 
 .email-subscription-form{
@@ -493,7 +527,6 @@
         @media (max-width: @grid-float-breakpoint) {
             margin:10px 0px 30px;
             border:3px solid #fff;
-            width:90%;
         }
 
         @media (min-width: @grid-float-breakpoint) {
@@ -586,7 +619,10 @@
 
 .content{
     padding:30px 20px;
-    min-height: 800px;
+
+    @media (min-width: @grid-float-breakpoint) {
+        min-height: 800px;
+    }
 }
 
 

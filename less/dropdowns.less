@@ -23,6 +23,11 @@
 // The dropdown wrapper (div)
 .dropdown {
   position: static!important;
+  margin-bottom: 2px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    margin-bottom: 0px;
+  }
 
   &:hover{
     >

@@ -3179,6 +3179,12 @@ tbody.collapse.in {
 }
 .dropdown {
   position: static!important;
+  margin-bottom: 2px;
+}
+@media (min-width: 992px) {
+  .dropdown {
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 992px) {
   .dropdown:hover > .dropdown-menu {
@@ -6458,6 +6464,12 @@ button.close {
 ===============================================*/
 .panel-search {
   margin-top: 5px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .panel-search {
+    margin-bottom: 0px;
+  }
 }
 .panel-search form {
   position: relative;
@@ -6499,13 +6511,15 @@ button.close {
 }
 .panel-access-wrapper {
   border-bottom: 1px solid #45cb6c;
-  border-right: 1px solid #45cb6c;
   background-color: #fff;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 @media (min-width: 992px) {
   .panel-access-wrapper {
     margin: 0px;
     border-top: 1px solid #45cb6c;
+    border-right: 1px solid #45cb6c;
   }
 }
 .panel-access-wrapper .panels-access {
@@ -6525,6 +6539,11 @@ button.close {
   line-height: 0.9em!important;
   text-transform: uppercase!important;
   display: inline-block;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .panel-access-wrapper .panels-access span {
+    font-size: 12px;
+  }
 }
 .panel-access-wrapper--navigation {
   float: left;
@@ -6645,11 +6664,13 @@ button.close {
   height: 50px;
   padding: 15px 10px 15px 0;
   text-align: center;
+  margin-top: 20px;
 }
 @media (min-width: 992px) {
   .navbar-right {
     margin-right: 20px;
     text-align: left;
+    margin-top: 0px;
   }
 }
 .navbar-right li {
@@ -6794,9 +6815,22 @@ button.close {
 }
 .footer-lv-3 {
   color: #022222;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .footer-lv-3 {
+    text-align: left;
+  }
 }
 .footer-lv-3 .panel-links-footer ul {
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+@media (min-width: 992px) {
+  .footer-lv-3 .panel-links-footer ul {
+    list-style-type: bullet;
+    padding-left: 20px;
+  }
 }
 .footer-lv-3 .panel-links-footer h3 {
   font-size: 22px;
@@ -6832,6 +6866,15 @@ button.close {
 .panel-social-icons-footer {
   padding-bottom: 30px;
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .panel-social-icons-footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .panel-social-icons-footer li {
+    padding-left: 0px;
+  }
+}
 @media (min-width: 992px) {
   .panel-social-icons-footer {
     width: 25%!important;
@@ -6863,6 +6906,9 @@ button.close {
   display: block;
   margin-top: 50px;
 }
+.panel-footer-logos img {
+  margin-bottom: 20px;
+}
 .email-subscription-form {
   position: relative;
   font-size: 10px;
@@ -6875,7 +6921,6 @@ button.close {
   .email-subscription-form .button {
     margin: 10px 0px 30px;
     border: 3px solid #fff;
-    width: 90%;
   }
 }
 @media (min-width: 992px) {
@@ -6951,7 +6996,11 @@ button.close {
 }
 .content {
   padding: 30px 20px;
-  min-height: 800px;
+}
+@media (min-width: 992px) {
+  .content {
+    min-height: 800px;
+  }
 }
 /* Custom Grid 
 ===============================================*/
