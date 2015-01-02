@@ -234,8 +234,8 @@
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
   > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
+    padding-top:    16px;
+    padding-bottom: 16px;
     line-height: @line-height-computed;
   }
 
@@ -251,7 +251,7 @@
       box-shadow: none;
       > li > a,
       .dropdown-header {
-        padding: 5px 15px 5px 25px;
+        padding: 5px 15px 5px 0px;
       }
       > li > a {
         line-height: @line-height-computed;
@@ -463,8 +463,8 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-default-link-active-bg;
-        color: @navbar-default-link-active-color;
+        background-color: @green;
+        color: #fff;
       }
     }
 
@@ -472,7 +472,7 @@
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
-          color: @navbar-default-link-color;
+          color: #fff;
           &:hover,
           &:focus {
             color: @navbar-default-link-hover-color;
