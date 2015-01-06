@@ -6858,7 +6858,7 @@ button.close {
 }
 @media (min-width: 992px) {
   .footer-lv-3 .panel-links-footer ul {
-    list-style-type: bullet;
+    list-style-type: inherit;
     padding-left: 20px;
   }
 }
