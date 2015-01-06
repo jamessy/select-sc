@@ -330,7 +330,9 @@
 }
 
 .dropdown-submenu:hover>.dropdown-menu{
-  display:block;
+  @media (min-width: @grid-float-breakpoint) {
+    display:block;
+  }
 }
 
 .dropdown-submenu:hover~.panel-access-wrapper--navigation{
@@ -338,11 +340,7 @@
 }
 
 .dropdown-submenu>a:after{
-  display:block;
-
-  @media (min-width: @grid-float-breakpoint) {
-    display: none;
-  }
+  display:none!important;
 
   content:" ";
   float:right;
