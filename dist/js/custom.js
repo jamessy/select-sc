@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 			// As this is firing before Bootstrap downdown, we look for false
 			if(!$(this).hasClass('open')){
-				$('.navbar').css('marginBottom','50px')
+				//$('.navbar').css('marginBottom','50px')
 			}
 		})	
 

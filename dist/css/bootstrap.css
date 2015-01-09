@@ -3969,7 +3969,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   border: 1px solid transparent;
 }
 @media (min-width: 992px) {
@@ -6815,6 +6815,27 @@ button.close {
 }
 .nav-featured-review button.button--cta {
   margin-top: 10px;
+}
+.nav-submenu-list-title {
+  font-weight: bold;
+  color: #2c9e57;
+}
+.nav-submenu-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.nav-submenu-list li {
+  margin-bottom: 5px;
+}
+.nav-submenu-list li a {
+  color: #000!important;
+}
+.nav-submenu-list li a:hover {
+  color: #2c9e57 !important;
+  text-decoration: underline;
+}
+.nav-submenu-list--no-title {
+  margin: 42px 0 20px!important;
 }
 /* Footer 
 ===============================================*/
