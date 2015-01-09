@@ -323,15 +323,34 @@
 
     > a{
         line-height: 2.3em!important;
+        color:#fff!important;
 
         @media(min-width:@grid-float-breakpoint){
             line-height: 1.3em!important;
         }
 
-        &:hover{
-            background-color: @green-med!important;
+    }
+
+    &:hover{
+        background-color: @green-med!important;
+        color:#fff!;
+
+      >  a{
             color:#fff!important;
+
+            &:before{
+                position: absolute;
+                content:" ";
+                .triangle();
+                left:50%;
+                margin-left: -15px;
+                bottom: 0px;
+                bottom: -12px;
+                z-index: 1100;
+              }    
         }
+
+
     }
 }
 

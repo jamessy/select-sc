@@ -3255,7 +3255,6 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #262626;
-  background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -3953,20 +3952,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .dropdown-submenu > a {
   position: relative;
-}
-.dropdown-submenu > a:hover:before {
-  position: absolute;
-  content: " ";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 15px 0 15px;
-  border-color: #2c9e57 transparent transparent transparent;
-  left: 50%;
-  margin-left: -15px;
-  bottom: 0px;
-  bottom: -12px;
-  z-index: 1100;
 }
 .dropdown-submenu:hover > a:after {
   border-left-color: #ffffff;
@@ -6734,15 +6719,33 @@ button.close {
 }
 .dropdown-submenu > a {
   line-height: 2.3em!important;
+  color: #fff!important;
 }
 @media (min-width: 992px) {
   .dropdown-submenu > a {
     line-height: 1.3em!important;
   }
 }
-.dropdown-submenu > a:hover {
+.dropdown-submenu:hover {
   background-color: #2c9e57 !important;
+  color: #fff!;
+}
+.dropdown-submenu:hover > a {
   color: #fff!important;
+}
+.dropdown-submenu:hover > a:before {
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #2c9e57 transparent transparent transparent;
+  left: 50%;
+  margin-left: -15px;
+  bottom: 0px;
+  bottom: -12px;
+  z-index: 1100;
 }
 .nav-panels {
   margin-bottom: 30px;
