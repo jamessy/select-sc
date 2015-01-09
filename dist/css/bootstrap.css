@@ -3984,7 +3984,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border: 1px solid transparent;
 }
 @media (min-width: 992px) {
@@ -6523,12 +6523,16 @@ button.close {
   color: #999999;
   border-left: 1px solid #45cb6c;
   padding-top: 10px;
-  padding-bottom: 8px;
 }
 @media (max-width: 992px) {
   .panel-access-wrapper .panels-access {
     border-top: 1px solid #45cb6c;
     border-right: 1px solid #45cb6c;
+  }
+}
+@media (min-width: 992px) {
+  .panel-access-wrapper .panels-access {
+    min-height: 50px;
   }
 }
 .panel-access-wrapper .panels-access span {
@@ -6537,9 +6541,10 @@ button.close {
   text-transform: uppercase!important;
   display: inline-block;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .panel-access-wrapper .panels-access span {
     font-size: 12px;
+    line-height: 1.1em!important;
   }
 }
 .panel-access-wrapper--navigation {
@@ -6555,6 +6560,11 @@ button.close {
   padding-left: 47px;
   margin-left: 10px;
   height: 32px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .icon {
+    padding-top: 2px;
+  }
 }
 .icon br {
   display: none;
@@ -6607,7 +6617,7 @@ button.close {
 @media (min-width: 992px) {
   .icon-tick {
     padding-left: 80px;
-    padding-right: 20px;
+    padding-right: 24px;
     background-position: 45px 0;
   }
 }
@@ -6855,12 +6865,6 @@ button.close {
 .footer-lv-3 .panel-links-footer ul {
   list-style-type: none;
   padding-left: 0px;
-}
-@media (min-width: 992px) {
-  .footer-lv-3 .panel-links-footer ul {
-    list-style-type: inherit;
-    padding-left: 20px;
-  }
 }
 .footer-lv-3 .panel-links-footer h3 {
   font-size: 22px;
