@@ -12,6 +12,7 @@
         margin-bottom: 0px;
     }
 
+
     form{
         position: relative;
 
@@ -462,6 +463,75 @@
 
 .nav-submenu-list--no-title{
     margin: 42px 0 20px!important;
+}
+
+/* Navbar Off Canvas - for Mobile
+===============================================*/
+.off-canvas-nav{
+    left:-100%;
+    top:0px;
+    position: fixed;
+    display: block;
+    visibility: visible;
+    .transition( left 0.3s ease-in-out 0s);
+    width: 200px;
+    z-index: 9999;
+    width:80%;
+}
+
+
+
+.off-canvas-nav.in{
+    left:0px;
+    .transition( left 0.3s ease-in-out 0s);
+}
+
+.off-canvas-nav.collapse, {
+    display: block;
+    visibility: visible;
+}
+
+.fullwidth-container.in{
+    display: block; 
+    left:0;
+    .transition( left 0.3s ease-in-out 0s);
+}
+
+.fullwidth-container.in{
+    .transition( left 0.3s ease-in-out 0s);
+    left:80%;
+}
+
+.fullwidth-container.collapse,.off-canvas-nav.collapse{
+    display: block!important; 
+    visibility: visible!important;
+}
+
+.fullwidth-container.collapsing{
+    overflow: visible;
+}
+
+.off-canvas-nav.collapsing{
+    display: block;
+    overflow: visible;
+}
+
+.fullwidth-container{
+    position: relative;
+    left:0px;
+    .transition( left 0.3s ease-in-out 0s);
+}
+
+.mobile-navigation{
+    background-color: @green-med;
+
+    .navbar-toggle{
+        float:left;
+
+        .icon-bar{
+            background-color: #fff;
+        }
+    }
 }
 
 
