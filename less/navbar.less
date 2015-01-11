@@ -211,9 +211,9 @@
   // Bars
   .icon-bar {
     display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
+    width: 28px;
+    height: 4px;
+    border-radius: 21px;
   }
   .icon-bar + .icon-bar {
     margin-top: 4px;
@@ -254,7 +254,9 @@
         padding: 5px 15px 5px 0px;
       }
       > li > a {
+        padding-left:15px;
         line-height: @line-height-computed;
+        
         &:hover,
         &:focus {
           background-image: none;
@@ -441,10 +443,10 @@
   }
 
   .navbar-toggle {
-    border-color: @navbar-default-toggle-border-color;
+    border-color: none;
     &:hover,
     &:focus {
-      background-color: @navbar-default-toggle-hover-bg;
+      background-color: none;
     }
     .icon-bar {
       background-color: @navbar-default-toggle-icon-bar-bg;
