@@ -10,10 +10,8 @@ $(document).ready(function(){
 			$('.panel-access-wrapper--navigation').hide();
 		})
 		$('.dropdown-submenu').hover(function(){
-			var vHeight = $('.navbar').prop('scrollHeight');
-			$('.panel-access-wrapper--navigation').css("top", vHeight + "px");
-			var newHeight = ($('.navbar').prop('scrollHeight') + 50);
-
+			var vHeight = $(this).find('.dropdown-menu-large').prop('scrollHeight');
+			$('.panel-access-wrapper--navigation').css("top", (vHeight + 100) + "px");
 		},function(){
 			$('.panel-access-wrapper--navigation').css("top", "200%");
 		})
@@ -41,12 +39,17 @@ $(document).ready(function(){
 
 	$('.mobile-view-button:not(.navbar-toggle)').on('click',function() {
 		var $show = $(this).data('expand');
-		$('.mobile-view-button').removeClass('active');
+		$('.mobile-view-button:not([data-expand="' + $show  + '"])').removeClass('active');
+
 		$('[data-reveal]:not(' + $show + ')').removeClass('active');
 		$(this).toggleClass('active');
 		$($show).toggleClass('active');
 	});
 
+	// THIS IS TO BE REMOVED, USED FOR DEMO PURPOSES
+	$('.dropdown-submenu').on('click',function(){
+		return false;
+	})
 
 
 })
