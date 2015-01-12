@@ -6445,16 +6445,28 @@ button.close {
 /* Header 
 ===============================================*/
 .panel-search-wrap {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  padding: 0px;
+  -webkit-transition: top 0.4s ease, visibility 0.3s ease;
+  -o-transition: top 0.4s ease, visibility 0.3s ease;
+  transition: top 0.4s ease, visibility 0.3s ease;
 }
 @media (min-width: 992px) {
   .panel-search-wrap {
     display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    width: 66.66666667%;
   }
 }
 .panel-search-wrap .panel-search {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  width: 100%;
+  left: 0px;
 }
 @media (min-width: 992px) {
   .panel-search-wrap .panel-search {
@@ -6465,18 +6477,39 @@ button.close {
   position: relative;
 }
 .panel-search-wrap .panel-search form .form-control {
-  border: 1px solid #6b6b6b;
+  border-radius: 0px;
+  border: none;
   width: 100%;
   background-color: #ebebeb;
 }
+@media (min-width: 992px) {
+  .panel-search-wrap .panel-search form .form-control {
+    border: 1px solid #6b6b6b;
+    position: relative;
+    top: 0px;
+    border-radius: 35px;
+  }
+}
 .panel-search-wrap .panel-search form .button--green {
   position: absolute;
-  right: 5px;
   top: 5px;
   height: 44px;
   width: 44px;
   color: #fff;
   font-size: 24px;
+  right: 2.2%;
+}
+@media (min-width: 992px) {
+  .panel-search-wrap .panel-search form .button--green {
+    right: 5px;
+  }
+}
+.panel-search-wrap.active {
+  visibility: visible;
+  -webkit-transition: top 0.4s ease, visibility 0.3s ease;
+  -o-transition: top 0.4s ease, visibility 0.3s ease;
+  transition: top 0.4s ease, visibility 0.3s ease;
+  top: 108px;
 }
 .panel-logo {
   background-color: #45cb6c;
@@ -6642,6 +6675,11 @@ button.close {
   box-shadow: none!important;
 }
 @media (min-width: 992px) {
+  .navbar-default {
+    border: none!important;
+  }
+}
+@media (min-width: 992px) {
   .navbar-collapse {
     padding-left: 0px;
     padding-right: 0px;
@@ -6649,6 +6687,11 @@ button.close {
 }
 .nav li.dropdown {
   border-bottom: 1px solid #45cb6c;
+}
+@media (min-width: 992px) {
+  .nav li.dropdown {
+    border-bottom: none;
+  }
 }
 .nav li.dropdown > a {
   background-color: transparent;
@@ -6742,7 +6785,7 @@ button.close {
   padding-right: 10px;
 }
 .dropdown-menu-large {
-  background-color: #f5f5f5!important ;
+  background-color: #f5f5f5!important;
 }
 .dropdown-submenu {
   border-top: 1px solid #95e1ab;
@@ -6879,15 +6922,27 @@ button.close {
 }
 /* Navbar Off Canvas - for Mobile
 ===============================================*/
+.fullwidth-container {
+  position: relative;
+  left: 0px;
+  -webkit-transition: left 0.4s ease 0s;
+  -o-transition: left 0.4s ease 0s;
+  transition: left 0.4s ease 0s;
+}
+@media (max-width: 992px) {
+  .fullwidth-container {
+    overflow-x: hidden;
+  }
+}
 .off-canvas-nav {
-  left: -100%;
+  left: -80%;
   top: 0px;
   position: fixed;
   display: block;
   visibility: visible;
-  -webkit-transition: left 0.3s ease-in-out 0s;
-  -o-transition: left 0.3s ease-in-out 0s;
-  transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.4s ease 0s;
+  -o-transition: left 0.4s ease 0s;
+  transition: left 0.4s ease 0s;
   width: 200px;
   z-index: 9999;
   width: 80%;
@@ -6990,47 +7045,11 @@ button.close {
     margin-top: 0px;
   }
 }
-.off-canvas-nav.in {
+.off-canvas-nav.active {
   left: 0px;
-  -webkit-transition: left 0.3s ease-in-out 0s;
-  -o-transition: left 0.3s ease-in-out 0s;
-  transition: left 0.3s ease-in-out 0s;
 }
-.off-canvas-nav.collapse {
-  display: block;
-  visibility: visible;
-}
-.fullwidth-container.in {
-  display: block;
-  left: 0;
-  -webkit-transition: left 0.3s ease-in-out 0s;
-  -o-transition: left 0.3s ease-in-out 0s;
-  transition: left 0.3s ease-in-out 0s;
-}
-.fullwidth-container.in {
-  -webkit-transition: left 0.3s ease-in-out 0s;
-  -o-transition: left 0.3s ease-in-out 0s;
-  transition: left 0.3s ease-in-out 0s;
+.fullwidth-container.active {
   left: 80%;
-}
-.fullwidth-container.collapse,
-.off-canvas-nav.collapse {
-  display: block!important;
-  visibility: visible!important;
-}
-.fullwidth-container.collapsing {
-  overflow: visible;
-}
-.off-canvas-nav.collapsing {
-  display: block;
-  overflow: visible;
-}
-.fullwidth-container {
-  position: relative;
-  left: 0px;
-  -webkit-transition: left 0.3s ease-in-out 0s;
-  -o-transition: left 0.3s ease-in-out 0s;
-  transition: left 0.3s ease-in-out 0s;
 }
 .mobile-navigation {
   background-color: #45cb6c;
@@ -7051,8 +7070,15 @@ button.close {
   font-size: 26px;
   line-height: 50px;
 }
-.mobile-navigation .mobile-view-button .glyphicon:hover {
+.mobile-navigation .mobile-view-button:focus {
+  outline: none;
   color: #2c9e57;
+}
+.mobile-navigation .mobile-view-button.active .glyphicon {
+  color: #2c9e57;
+}
+.mobile-navigation .mobile-view-button.active .icon-bar {
+  background-color: #2c9e57;
 }
 .mobile-navigation .login-toggle {
   margin-right: 14%;
@@ -7062,6 +7088,40 @@ button.close {
 }
 .mobile-navigation .navbar-toggle {
   margin-left: 14%;
+}
+#mobile-login {
+  background-color: #ebebeb;
+  text-align: center;
+  -webkit-transition: height 0.4s ease, visible 0.4s ease;
+  -o-transition: height 0.4s ease, visible 0.4s ease;
+  transition: height 0.4s ease, visible 0.4s ease;
+  height: 0px;
+}
+#mobile-login ul {
+  height: 0px;
+  display: none;
+}
+#mobile-login a {
+  color: #000;
+  font-size: 17px;
+}
+#mobile-login .nav-right:first-of-type {
+  border-right: 1px solid #000;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 13px;
+  margin-bottom: 7px;
+}
+#mobile-login.active {
+  visibility: visible;
+  height: 53px;
+  -webkit-transition: height 0.4s ease;
+  -o-transition: height 0.4s ease;
+  transition: height 0.4s ease;
+}
+#mobile-login.active ul {
+  height: auto;
+  display: block;
 }
 /* Footer 
 ===============================================*/
@@ -7309,6 +7369,7 @@ button.close {
 @media (max-width: 992px) {
   .container {
     padding: 0px;
+    width: 100%;
   }
 }
 .col-xs-5ths,

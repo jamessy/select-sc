@@ -143,14 +143,14 @@
 
                         <a href="/">
                             <!-- Desktop Logo -->
-                            <img class="hidden-sm hidden-xs" src="images/logo.png" alt="Select Science"> 
-                            
+                            <img class="hidden-sm hidden-xs" src="images/logo.png" alt="Select Science">
+
                             <!-- Mobile Logo -->
-                            <img class="visible-sm-block visible-xs-block" src="images/logo-mobile.png" alt="Select Science"> 
+                            <img class="visible-sm-block visible-xs-block" src="images/logo-mobile.png" alt="Select Science">
                         </a>
                     </div>
 
-                    <div class="col-md-8 panel-search-wrap">
+                    <div class="col-md-8 panel-search-wrap" data-reveal>
                         <div class="panel-search">
                             <form action="/">
                                 <input type="text" class="form-control circular-form-input large-text-input" placeholder="Search products, reviews, methods...">
@@ -164,12 +164,12 @@
                 <!--\ Logo & Search -->
 
                 <nav class="navbar navbar-default navbar-static">
-                    <div class="navbar-header mobile-navigation">
+                    <div class="navbar-header mobile-navigation visible-sm-block visible-xs-block">
 
-                        <div class="container visible-sm-block visible-xs-block">
+                        <div class="container ">
                             <div class="row">
                                 <div class="col-xs-4 text-left">
-                                    <button class="navbar-toggle mobile-view-button" type="button" data-toggle="collapse" data-target=".off-canvas-nav,.fullwidth-container">
+                                    <button class="navbar-toggle mobile-view-button" type="button" data-toggle="offcanvas">
                                         <span class="sr-only">Toggle navigation</span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
@@ -177,14 +177,24 @@
                                     </button>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <button class="search-toggle mobile-view-button" type="button" data-toggle="collapse" data-target="">
+                                    <button class="search-toggle mobile-view-button" type="button"  data-toggle="showitem" data-expand=".panel-search-wrap">
                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                     </button>
                                 </div>
                                 <div class="col-xs-4 text-right">
-                                    <button class="login-toggle mobile-view-button" type="button" data-toggle="collapse" data-target="">
+                                    <button class="login-toggle mobile-view-button" type="button" data-toggle="showitem" data-expand="#mobile-login" aria-expanded="false">
                                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                     </button>
+                                </div>
+                                
+                                <div class="col-xs-12" data-reveal id="mobile-login">
+                                    <ul class="list-inline">
+                                        <li class="nav-right"><a href="">Login</a>
+                                        </li>
+                                        <li class="nav-right"><a href="">Join Free
+                                        </a>
+                                        </li>
+                                    </ul>   
                                 </div>
                             </div>
                         </div>
@@ -1393,7 +1403,7 @@
                         </ul>
 
                         <!-- Access Panels 1st version. This will show underneath navigation on hover-->
-                        <div class="row panel-access-wrapper panel-access-wrapper--navigation">
+                        <div class="row panel-access-wrapper panel-access-wrapper--navigation hidden-xs hidden-sm">
                             <div class="col-md-5ths panels-access"><span class="icon icon-scale">Make informed decisions</span>
                             </div>
                             <div class="col-md-5ths panels-access"><span class="icon icon-users">Share impartial product reviews</span>
@@ -1413,7 +1423,7 @@
                 </nav>
 
                 <!-- Access Panels 2 version. This will show when navigation is not being used -->
-                <div class="row panel-access-wrapper">
+                <div class="row panel-access-wrapper hidden-xs hidden-sm">
                     <div class="col-md-5ths panels-access"><span class="icon icon-scale">Make informed decisions</span>
                     </div>
                     <div class="col-md-5ths panels-access"><span class="icon icon-users">Share impartial product reviews</span>
