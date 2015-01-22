@@ -1,7 +1,9 @@
 /* Custom Updates*/
 /* Header 
 ===============================================*/
-
+iframe{
+    border:0;
+}
 .panel-search-wrap {
     visibility: hidden;
     position: absolute;
@@ -900,7 +902,7 @@
 .news-row{
    margin-top:@line-height-third;
    padding-top:@line-height-third;
-   padding-bottom:  @line-height-third;
+   padding-bottom:  3px;
 }
 
 .panel-buying-guides{
@@ -923,20 +925,116 @@
     font-size: 30px;
     padding:0px;
     margin:0px;
+    position: relative;
+    text-indent: 35px;
+    display: inline-block;
+
+    span{
+        display: inline-block;
+    }
+
+    &:before{
+        position: absolute;
+        left:0px;
+        content: '';
+        top:4px;
+        background: url(/images/blockquote-start.png) no-repeat 0 0;
+        width:30px;
+        height: 30px;
+    }
+
+    span.end-quote{
+        bottom:0px;
+        background: url(/images/blockquote-end.png) no-repeat 0 0;
+        width:30px;
+        height: 30px;
+        position: relative;
+        margin-left: 20px;
+        top:8px;
+    }
 }
+
+.tab-lists{
+    border-bottom: 1px solid @green;
+
+   > li{
+        a{
+            font-size: @font-size-base;
+            border-radius: 0;
+            padding:10px;
+            //border:1px solid @green;
+            border-bottom: 0;
+            color:@green;
+        }
+
+        /*&.active > a, li.active, li.active > a:focus{
+            background-color: #fff!important;
+           
+        }*/
+
+        &.active{
+            > a,a:focus,a:hover{
+                background-color:#fff;    
+                border: 1px solid @green;
+                color:#000;
+                border-bottom-color: rgba(0, 0, 0, 0);
+            }
+            
+        }
+
+        //.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus 
+    }
+}
+
+.panel-news-list-image{
+    .button{
+        margin-top: 0px;
+    }
+}
+
+.panel-cta-join{
+    cite{
+        font-style: normal;
+    }
+}
+
+.panel-vcard{
+    .panel-title{
+        margin-bottom: 5px;
+    }
+}
+
+.panel-most-popular{
+    .tab-lists{
+        margin-top: 15px;
+    }
+}
+
+
+
 
 
 /* Classes 
 ===============================================*/ 
+.landmark{
+    margin-bottom: 30px;
+}
+
+.landmark--half{
+    margin-bottom: @line-height-half;
+}
+
 .button{
     padding:9px 0;
     font-size: 16px;
     line-height: @line-height-base;
     text-align: center;
     display: inline-block;
+    margin-top: @line-height-half;
 
     &:hover{
         text-decoration: none;
+        color:#fff;
     }
 }
 
@@ -956,6 +1054,7 @@
 .panel-title{
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: @line-height-half;
 }
 
 .panel-title--large{
@@ -977,12 +1076,17 @@
 
 .title-info{
     position: absolute;
-    top:0px;
+    top:4px;
     right:(@grid-gutter-width /2);
 }
 
 .border-tp{
     border-top: 1px solid @green;  
+}
+
+.list-no-bullet{
+    list-style-type: none;
+    padding-left:0px;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -1022,13 +1126,26 @@
     padding:0px;
     margin: 0px;
     font-size: @font-size-base;
+    color:@grey-dark;
+    .transition(all 0.2s ease);
 
     a{
         color:@grey-dark;
         //line-height: @line-height-half; 
         font-size: @font-size-base;   
-        display: inline-block;
+        display: inline;
         line-height: @line-height-computed;
+        .transition(all 0.2s ease);
+
+        &:hover{
+            color:@green;
+            text-decoration: none;
+        }
+    }
+
+    &:hover{
+         color:@green;
+         text-decoration: none;   
     }
 }
 

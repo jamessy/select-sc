@@ -6444,6 +6444,9 @@ button.close {
 /* Custom Updates*/
 /* Header 
 ===============================================*/
+iframe {
+  border: 0;
+}
 .panel-search-wrap {
   visibility: hidden;
   position: absolute;
@@ -7391,7 +7394,7 @@ button.close {
 .news-row {
   margin-top: 6.66666667px;
   padding-top: 6.66666667px;
-  padding-bottom: 6.66666667px;
+  padding-bottom: 3px;
 }
 .panel-featured-review {
   position: relative;
@@ -7404,18 +7407,86 @@ button.close {
   font-size: 30px;
   padding: 0px;
   margin: 0px;
+  position: relative;
+  text-indent: 35px;
+  display: inline-block;
+}
+.feature-quote span {
+  display: inline-block;
+}
+.feature-quote:before {
+  position: absolute;
+  left: 0px;
+  content: '';
+  top: 4px;
+  background: url(/images/blockquote-start.png) no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+}
+.feature-quote span.end-quote {
+  bottom: 0px;
+  background: url(/images/blockquote-end.png) no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: 20px;
+  top: 8px;
+}
+.tab-lists {
+  border-bottom: 1px solid #45cb6c;
+}
+.tab-lists > li {
+  /*&.active > a, li.active, li.active > a:focus{
+            background-color: #fff!important;
+           
+        }*/
+}
+.tab-lists > li a {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 10px;
+  border-bottom: 0;
+  color: #45cb6c;
+}
+.tab-lists > li.active > a,
+.tab-lists > li.active a:focus,
+.tab-lists > li.active a:hover {
+  background-color: #fff;
+  border: 1px solid #45cb6c;
+  color: #000;
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+.panel-news-list-image .button {
+  margin-top: 0px;
+}
+.panel-cta-join cite {
+  font-style: normal;
+}
+.panel-vcard .panel-title {
+  margin-bottom: 5px;
+}
+.panel-most-popular .tab-lists {
+  margin-top: 15px;
 }
 /* Classes 
 ===============================================*/
+.landmark {
+  margin-bottom: 30px;
+}
+.landmark--half {
+  margin-bottom: 10px;
+}
 .button {
   padding: 9px 0;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   display: inline-block;
+  margin-top: 10px;
 }
 .button:hover {
   text-decoration: none;
+  color: #fff;
 }
 .button--medium {
   width: 268px;
@@ -7430,6 +7501,7 @@ button.close {
 .panel-title {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 .panel-title--large {
   font-size: 24px;
@@ -7447,11 +7519,15 @@ button.close {
 }
 .title-info {
   position: absolute;
-  top: 0px;
+  top: 4px;
   right: 15px;
 }
 .border-tp {
   border-top: 1px solid #45cb6c;
+}
+.list-no-bullet {
+  list-style-type: none;
+  padding-left: 0px;
 }
 .form-control::-webkit-input-placeholder {
   color: #000000!important;
@@ -7486,12 +7562,27 @@ button.close {
   padding: 0px;
   margin: 0px;
   font-size: 16px;
+  color: #022222;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .list-item-link a {
   color: #022222;
   font-size: 16px;
-  display: inline-block;
+  display: inline;
   line-height: 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.list-item-link a:hover {
+  color: #45cb6c;
+  text-decoration: none;
+}
+.list-item-link:hover {
+  color: #45cb6c;
+  text-decoration: none;
 }
 .testimonial-sig {
   font-size: 16px;
