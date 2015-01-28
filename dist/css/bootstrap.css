@@ -6444,6 +6444,9 @@ button.close {
 /* Custom Updates*/
 /* Header 
 ===============================================*/
+img {
+  max-width: 100%;
+}
 iframe {
   border: 0;
 }
