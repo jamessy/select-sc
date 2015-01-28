@@ -5,13 +5,15 @@ $(document).ready(function(){
 
 		// This will show the header panels and adjust height accordingly
 		$('.dropdown').hover(function(){
-			$('.panel-access-wrapper--navigation').show();
+			$('.panel-access-wrapper--navigation').fadeIn('slow');
 		},function(){
 			$('.panel-access-wrapper--navigation').hide();
 		})
 		$('.dropdown-submenu').hover(function(){
 			var vHeight = $(this).find('.dropdown-menu-large').prop('scrollHeight');
+			$('.panel-access-wrapper--navigation').hide();
 			$('.panel-access-wrapper--navigation').css("top", (vHeight + 100) + "px");
+			$('.panel-access-wrapper--navigation').delay(400).fadeIn(600);
 		},function(){
 			$('.panel-access-wrapper--navigation').css("top", "200%");
 		})

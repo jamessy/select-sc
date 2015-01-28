@@ -20,6 +20,46 @@
 
 }
 
+/* Updates for fading dropdowns */
+.dropdown{
+
+  > .dropdown-menu{
+    .opacity(0);
+    .transition(all 0.7s ease 0.5s);
+  }
+
+  &:hover {
+
+    > .dropdown-menu{
+      .opacity(1);
+      visibility:visible;
+    }
+  }
+
+  &.open > .dropdown-menu{
+    visibility: visible;
+    .opacity(1)
+  }
+}
+
+.dropdown-submenu{
+
+  .dropdown-menu-large{
+    .opacity(0);
+    .transition(all 0.7s ease 0.5s);
+    visibility: hidden;
+  }
+
+  &:hover{
+
+    .dropdown-menu-large{
+      .opacity(1);
+      visibility: visible;
+    }
+
+  }
+}
+
 // The dropdown wrapper (div)
 .dropdown {
   position: static!important;
@@ -29,12 +69,16 @@
     margin-bottom: 0px;
   }
 
+  > .dropdown-menu{
+  }
+
   &:hover{
     >
     .dropdown-menu{
 
       @media (min-width: @grid-float-breakpoint) {
         display: block;
+
       }
     }
   }
@@ -56,7 +100,9 @@
   top: 100%;
   left: 0;
   z-index: @zindex-dropdown;
-  display: none; // none by default, but block on "open" of the menu
+  //display: none; // none by default, but block on "open" of the menu
+
+  visibility:hidden;
   float: left;
   width:100%;
   padding: 0;
