@@ -3177,37 +3177,6 @@ tbody.collapse.in {
     display: none;
   }
 }
-/* Updates for fading dropdowns */
-.dropdown > .dropdown-menu {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: all 0.7s ease 0.5s;
-  -o-transition: all 0.7s ease 0.5s;
-  transition: all 0.7s ease 0.5s;
-}
-.dropdown:hover > .dropdown-menu {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  visibility: visible;
-}
-.dropdown.open > .dropdown-menu {
-  visibility: visible;
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-.dropdown-submenu .dropdown-menu-large {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: all 0.7s ease 0.5s;
-  -o-transition: all 0.7s ease 0.5s;
-  transition: all 0.7s ease 0.5s;
-  visibility: hidden;
-}
-.dropdown-submenu:hover .dropdown-menu-large {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  visibility: visible;
-}
 .dropdown {
   position: static!important;
   margin-bottom: 2px;
@@ -3230,7 +3199,7 @@ tbody.collapse.in {
   top: 100%;
   left: 0;
   z-index: 1000;
-  visibility: hidden;
+  display: none;
   float: left;
   width: 100%;
   padding: 0;
