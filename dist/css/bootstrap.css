@@ -7553,8 +7553,25 @@ iframe {
   margin: 0px;
   font-size: 16px;
 }
-p.landmark--half {
+p.landmark--half,
+.panel-title.landmark--half {
   margin-bottom: 10px !important;
+}
+.product-overview-wrap .button--product {
+  margin-right: 20px;
+}
+.product-overview-wrap .sci-logo {
+  margin-top: -5px;
+}
+.product-overview-wrap .product-overview-bottom {
+  padding: 10px 15px;
+}
+.product-overview .image-wrap {
+  margin: 8px 0 18px;
+  padding: 10px 15px;
+}
+.product-overview .product-overview-text-wrap {
+  padding: 10px 15px;
 }
 /* Classes 
 ===============================================*/
@@ -7651,7 +7668,13 @@ a.button--dk-grey:hover {
   margin-bottom: 10px;
 }
 .panel-title--light {
-  font-weight: normal;
+  font-weight: normal!important;
+}
+.title-bg-gr {
+  background-color: #b2b2b2;
+  color: #fff;
+  padding: 0 15px;
+  line-height: 50px;
 }
 .article-title {
   font-size: 24px;
@@ -7740,6 +7763,9 @@ a.button--dk-grey:hover {
 }
 .lt-gr-bg {
   background-color: #cdebd5;
+}
+.gr-panel {
+  background-color: #ebebeb;
 }
 .blockquote-featured {
   padding: 0px;
