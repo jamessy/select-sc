@@ -881,9 +881,9 @@ iframe{
 }
 
 .news-row{
-   margin-top:@line-height-third;
+  /* margin-top:@line-height-third;*/
    padding-top:@line-height-third;
-   padding-bottom:  3px;
+   padding-bottom: @line-height-third;
 }
 
 .panel-buying-guides{
@@ -1154,29 +1154,70 @@ p.landmark--half,.panel-title.landmark--half{
 
     .product-overview-bottom{
         padding:10px 15px;
+        margin-top: 1px;
     }
 }
 
 .product-overview{
     
     .image-wrap{
-        margin:8px 0 18px;
-        padding:10px 15px;
+        margin:0px 0 18px;
+        padding:5px 15px 10px;
     }
 
     .product-overview-text-wrap{
         padding:10px 15px;
+
+        .article-title{
+            margin-top: 0px;
+        }
     }
 }
 
-.panel-share{
+.related-products-slider{
+    //padding:0px 40px;
+    width:790px;
+    margin-left: auto;
+    margin-right: auto;
 
+    .flex-prev{
+        left:18px!important;
+    }
+
+    .flex-next{
+        right:15px!important;
+    }
+
+    .flex-direction-nav a{
+        margin: -42px 0 0;
+        top: 50%;
+    }
+
+    .slide{
+        width:198px!important;
+        text-align: left;
+        padding:0 10px 10px 7px;
+        
+        p{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .button{
+            padding-left:20px;
+            padding-right: 20px;
+        }
+    }
 }
 
 
 
 /* Classes 
 ===============================================*/ 
+.no-margin{
+    margin:0px!important;
+}
+
 .landmark{
     margin-bottom: 30px;
 }
@@ -1305,6 +1346,11 @@ p.landmark--half,.panel-title.landmark--half{
     right:(@grid-gutter-width /2);
 }
 
+.title-medium{
+    margin-top: 10px;
+    font-size: 29px;
+}
+
 .border-tp{
     border-top: 1px solid @green;  
 }
@@ -1371,6 +1417,25 @@ p.landmark--half,.panel-title.landmark--half{
     position: absolute;
     top:10px;
     left:0px;
+}
+
+.list-ticks{
+    padding-bottom: @line-height-computed;;
+}
+
+.icon-circle-bullet{
+    position: relative;
+    padding-left: 40px;
+
+    &:before{
+        background: url(../../images/circle-tick-icon.png) no-repeat 0 0;
+        content: '';
+        top:1px;
+        left:0;
+        width:32px;
+        height: 32px;
+        position: absolute;
+    }
 }
 
 .form-control::-webkit-input-placeholder {

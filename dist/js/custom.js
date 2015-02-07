@@ -62,7 +62,7 @@ $(document).ready(function(){
 	// Get the instance API
 	var api = $easyzoom.data('easyZoom');
 
-	/* Slider */
+	/* Product Image Slider */
 	jQuery('.flexslider').flexslider({
 	    animation: "slide",
 	    controlNav: false,
@@ -103,6 +103,23 @@ $(document).ready(function(){
 
 		return false;
 	})
+
+	/* Related Products Slider */
+	jQuery('.related-products-slider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: 198,
+	    minItems: 4,
+	    maxItems: 4,
+	    move: 1,
+	    touch: false,
+	    prevText: "",
+	    nextText: ""
+	    // itemWidth:2,
+	    //controlsContainer: "#controls"
+	});
 
 
 })

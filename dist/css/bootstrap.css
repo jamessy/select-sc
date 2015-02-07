@@ -7374,9 +7374,9 @@ iframe {
   display: block;
 }
 .news-row {
-  margin-top: 6.66666667px;
+  /* margin-top:@line-height-third;*/
   padding-top: 6.66666667px;
-  padding-bottom: 3px;
+  padding-bottom: 6.66666667px;
 }
 .panel-featured-review {
   position: relative;
@@ -7565,16 +7565,51 @@ p.landmark--half,
 }
 .product-overview-wrap .product-overview-bottom {
   padding: 10px 15px;
+  margin-top: 1px;
 }
 .product-overview .image-wrap {
-  margin: 8px 0 18px;
-  padding: 10px 15px;
+  margin: 0px 0 18px;
+  padding: 5px 15px 10px;
 }
 .product-overview .product-overview-text-wrap {
   padding: 10px 15px;
 }
+.product-overview .product-overview-text-wrap .article-title {
+  margin-top: 0px;
+}
+.related-products-slider {
+  width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.related-products-slider .flex-prev {
+  left: 18px!important;
+}
+.related-products-slider .flex-next {
+  right: 15px!important;
+}
+.related-products-slider .flex-direction-nav a {
+  margin: -42px 0 0;
+  top: 50%;
+}
+.related-products-slider .slide {
+  width: 198px!important;
+  text-align: left;
+  padding: 0 10px 10px 7px;
+}
+.related-products-slider .slide p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.related-products-slider .slide .button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /* Classes 
 ===============================================*/
+.no-margin {
+  margin: 0px!important;
+}
 .landmark {
   margin-bottom: 30px;
 }
@@ -7691,6 +7726,10 @@ a.button--dk-grey:hover {
   top: 4px;
   right: 15px;
 }
+.title-medium {
+  margin-top: 10px;
+  font-size: 29px;
+}
 .border-tp {
   border-top: 1px solid #45cb6c;
 }
@@ -7741,6 +7780,22 @@ a.button--dk-grey:hover {
   position: absolute;
   top: 10px;
   left: 0px;
+}
+.list-ticks {
+  padding-bottom: 20px;
+}
+.icon-circle-bullet {
+  position: relative;
+  padding-left: 40px;
+}
+.icon-circle-bullet:before {
+  background: url(../../images/circle-tick-icon.png) no-repeat 0 0;
+  content: '';
+  top: 1px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
 }
 .form-control::-webkit-input-placeholder {
   color: #000000!important;
