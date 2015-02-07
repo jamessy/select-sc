@@ -53,5 +53,56 @@ $(document).ready(function(){
 		return false;
 	})
 
+	/* Product page */
+
+	// Image zoom
+	// Instantiate EasyZoom plugin
+	var $easyzoom = $('.easyzoom').easyZoom();
+
+	// Get the instance API
+	var api = $easyzoom.data('easyZoom');
+
+	/* Slider */
+	jQuery('.flexslider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: 75,
+	    //asNavFor: '.product-slider',
+	    minItems: 3,
+	    maxItems: 3,
+	    move: 1,
+	    touch: false,
+	    prevText: "",
+	    nextText: ""
+	    // itemWidth:2,
+	    //controlsContainer: "#controls"
+	});
+
+	$('.js-slide-thumb').on('click',function(){
+		var img = $(this).find('img').data('img');
+		var largeImg = $(this).find('img').data('largeimg');
+
+		console.log(largeImg);
+
+		$holder = $('.easyzoom ');
+
+		$holder.find('a').attr('href',largeImg);
+		$holder.find('img').attr('src',img);
+		//console.log(img);
+
+		//console.log($easyzoom.data('easyZoom'));
+
+		api = $easyzoom.data('easyZoom');
+		api.teardown();
+		//$easyzoom.teardown();
+
+		var $zoom = $('.easyzoom').easyZoom();
+		var api = $zoom.data('easyZoom');
+
+		return false;
+	})
+
 
 })

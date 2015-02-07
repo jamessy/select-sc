@@ -11,7 +11,7 @@
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
-@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-light:             #a9a9a9 ;
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
 @brand-primary:         darken(#428bca, 6.5%);
@@ -24,10 +24,12 @@
 @green-med: 			#2c9e57;
 @green-dark: 			#296f3d;
 @green-dirty: 			#809090;
+@green-light: 			#cdebd5;
 @grey: 					#ebebeb;
 @grey-dark: 			#022222;
 @grey-light: 			#f5f5f5;
 @red:                   #e5002c;
+@orange: 				#ffa800;
 
 
 //== Scaffolding
@@ -40,7 +42,7 @@
 @text-color:            @grey-dark;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            @green;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      @green;
 //** Link hover decoration.
@@ -794,9 +796,9 @@
 //** Breadcrumb background color
 @breadcrumb-bg:                 #f5f5f5;
 //** Breadcrumb text color
-@breadcrumb-color:              #ccc;
+@breadcrumb-color:              #8a8989;
 //** Text color of current page in the breadcrumb
-@breadcrumb-active-color:       @gray-light;
+@breadcrumb-active-color:       @green;
 //** Textual separator for between breadcrumb elements
 @breadcrumb-separator:          "/";
 

@@ -10,6 +10,8 @@
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
     <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="dist/css/easyzoom.css" rel="stylesheet">
+    <link href="dist/css/flexslider.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -1457,65 +1459,69 @@
             </div>
 
             <div class="row">
-
+                
                 <!-- left col -->
                 <div class="col-md-9">
                     <div class="row">
 
                         <!-- Product view -->
                         <div class="product-view col-md-12">
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2 class="product-title">Sci-Print VX2</h2>
-                                </div>
-                            </div>
-
+                            <h2 class="product-title">Sci-Print VX2</h2>
+        
                             <div class="row product-meta">
-                                <div class="col-md-2">
-                                    <span class="featured-by">by <strong class="gr-highlight">Scinomix</strong></span>
-                                </div>
-                                <div class="col-md-2">
-                                    <span>Cat # 90909090</span>
-                                </div>
-                                <div class="col-md-6">
-                                    (stars and text to be added)
+                                <div class="col-md-12 landmark--half">
+                                    <p class="featured-by">by <strong class="gr-highlight">Scinomix</strong> |  Cat 90909090  <img class="ratings" src="/images/stars-large.png" alt="stars"><span class="faded-text">4.4/5.0 (2 reviews)</span></p>
                                 </div>
                             </div>
-
                             <div class="row">
-                                <div class="col-md-12">
-                                    <p>The Scinomix SCI-PRINT VX2 is a small footprint multifunction vial handling instrument.</p>
+                                <div class="col-md-12 landmark--half">
+                                    <h3 class="panel-title panel-title--light">The Scinomix SCI-PRINT VX2 is a small footprint multifunction vial handling instrument.</h3>
                                 </div>
                             </div>
+                           
 
                             <div class="row">
 
                                 <!-- product Images -->
                                 <div class="col-md-4 product-images">
-                                    <div class="product-main-image">
-                                        <img src="http://placehold.it/270x270" alt="">
+                                    <div class="product-main-image ">
+                                    <span class="mag-glass"></span>
+                                    <div class="easyzoom easyzoom--overlay">
+                                     <a href="images/phone-1-zoom.jpg">
+                                        <img src="images/phone-1.jpg" alt="placeholder">
+                                     </a>
+                                    </div>
+     
                                     </div>
 
-                                    <div class="product-thumbs">
-                                        <ul class="list-inline">
-                                            <li class="image"><img src="http://placehold.it/70x70" alt="">
+                                    <div class="product-thumbs flexslider">
+                                        <ul class="list-inline slides">
+                                            <li class="image js-slide-thumb"> <img src="http://www.placecage.com/70/70" alt="placeholder" data-img='http://www.placecage.com/270/268' data-largeimg='http://www.placecage.com/1000/1000'>
+
                                             </li>
-                                            <li class="image"><img src="http://placehold.it/70x70" alt="">
+                                            <li class="image js-slide-thumb"> <img src="images/phone-1.jpg" alt="placeholder" data-img='images/phone-1.jpg' data-largeimg='images/phone-1-zoom.jpg'>
                                             </li>
-                                            <li class="image"><img src="http://placehold.it/70x70" alt="">
+                                            <li class="image js-slide-thumb"><img src="http://www.placecage.com/c/70/70" alt="placeholder" data-img='http://www.placecage.com/270/268' data-largeimg='http://www.placecage.com/1000/1000'>
+                                            </li>
+                                            <li class="image js-slide-thumb"> <img src="http://www.placecage.com/70/70" alt="placeholder" data-img='http://www.placecage.com/270/268' data-largeimg='http://www.placecage.com/1000/1000'>
+
+                                            </li>
+                                            <li class="image js-slide-thumb"> <img src=" http://www.placecage.com/g/70/70" alt="placeholder" data-img='http://www.placecage.com/270/268' data-largeimg='http://www.placecage.com/1000/1000'>
+                                            </li>
+                                            <li class="image js-slide-thumb"><img src="http://www.placecage.com/c/70/70" alt="placeholder" data-img='http://www.placecage.com/270/268' data-largeimg='http://www.placecage.com/1000/1000'>
                                             </li>
                                         </ul>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <ul class="list-no-bullet">
+                                        <div class="col-md-12 landmark">
+                                            <h2 class="panel-title">Title will go here</h2>
+                                            <ul class="list-no-bullet list-primary">
                                                 <li class="border-tp"><a class="list-item-link" href="#">Request Product Information</a>
                                                 </li>
                                                 <li class="border-tp"><a class="list-item-link" href="">Contact Supply</a>
                                                 </li>
-                                                <li class="border-tp"><a class="list-item-link" href="#">Manufacturer Profile</a>
+                                                <li class="border-tp border-bt"><a class="list-item-link" href="#">Manufacturer Profile</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1527,17 +1533,19 @@
                                 <div class="col-md-8 product-information">
 
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <img src="http://placehold.it/100x100" alt="" class="img-circle pull-left">
-                                            <p>The Scinomix SCI-PRINT VX2 is a small footprint multifunction vial handling instrument. Its primary function is as a vial labeler. Other options include uncapping and capping (Screw top lids), filling and cherry picking. There is an optional built in 2D barcode scanner to ensure the vials are correctly placed in the racks (Matrix and Micronic). The SCI-PRINT VX2 is compatible with Matrix and Its primary function is as a vial labeler. Other options include uncapping and capping (Screw top lids), filling and cherry picking. There is an optional built in 2D barcode scanner to ensure the vials are correctly placed in the racks (Matrix and Micronic)… <a href="#">Read more</a> </p>
+                                        <div class="col-md-12 landmark--half">
+                                            <div class="border-bt">
+                                                <img src="http://placehold.it/100x100" alt="" class="img-circle pull-left product-detail-img">
+                                                <p>The Scinomix SCI-PRINT VX2 is a small footprint multifunction vial handling instrument. Its primary function is as a vial labeler. Other options include uncapping and capping (Screw top lids), filling and cherry picking. There is an optional built in 2D barcode scanner to ensure the vials are correctly placed in the racks (Matrix and Micronic). The SCI-PRINT VX2 is compatible with Matrix and Its primary function is as a vial labeler. Other options include uncapping and capping (Screw top lids), filling and cherry picking. There is an optional built in 2D barcode scanner to ensure the vials are correctly placed in the racks (Matrix and Micronic)… <a href="#">Read more</a> </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row landmark--half">
                                         <div class="col-md-6">
                                             <a href="#" class="button button--orange button--product">Request Pricing</a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="http://placehold.it/115x45" alt="placeholder">
+                                            <img src="/images/sci-logo.jpg" alt="placeholder" class="sci-logo">
                                         </div>
                                     </div>
                                     <div class="row">
@@ -1557,38 +1565,37 @@
                     <div class="row">
 
                         <!-- Product review -->
-                        <div class="col-md-12 product-review">
+                        <div class="col-md-12 product-review landmark">
 
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 landmark--half">
                                     <h2 class="panel-title title-border">Reviews</h2>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p><span class="gr-highlight"><strong>3</strong></span> Scientists have reviewed this product</p>
-                                    <a href="" class="button button--grey">Write your own review</a>
+                                    <h2 class="panel-title panel-title--light"><span class="gr-highlight"><strong>3</strong></span> Scientists have reviewed this product</h2>
+                                    <a href="" class="button button--grey button-review button--product"><strong>Write your own review</strong></a>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-6 text-right">
-                                            <p>Average Rating: <strong>4.4</strong>
-                                            </p>
+                                        <div class="col-md-6 text-right large-ratings-wrap pull-right"><img class="ratings" src="/images/stars-large.png" alt="stars">
                                         </div>
-                                        <div class="col-md-6 text-right"><img src="http://placehold.it/163x30" alt="placeholder">
+                                        <div class="col-md-6 text-right pull-right landmark--half">
+                                            <h2 class="panel-title panel-title--light">Average Rating: <strong>4.4</strong></h2>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-9 pull-right">
-                                            <dl class="dl-horizontal pull-right">
+                                            <dl class="dl-horizontal pull-right dl-horizontal--left landmark--half">
                                                 <dt>Ease of use</dt>
-                                                <dd><img src="http://placehold.it/110x21" alt="placeholder">
+                                                <dd><img src="/images/stars-medium.png" alt="stars">
                                                 </dd>
                                                 <dt>After sales service</dt>
-                                                <dd><img src="http://placehold.it/110x21" alt="placeholder">
+                                                <dd><img src="/images/stars-medium.png" alt="stars">
                                                 </dd>
                                                 <dt>Value for money</dt>
-                                                <dd><img src="http://placehold.it/110x21" alt="placeholder">
+                                                <dd><img src="/images/stars-medium.png" alt="stars">
                                                 </dd>
                                             </dl>
                                         </div>
@@ -1599,67 +1606,69 @@
 
                             <div class="row">
                                 <div class="col-md-12 ">
-                                    <div class="title-border"></div>
+                                    <div class="title-border landmark"></div>
 
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <ul class="list-no-bullet">
+                                        <div class="col-md-4">
+                                            <ul class="list-no-bullet list-primary">
                                                 <li><span class="gr-highlight panel-title">Tram Ngo</span>
                                                 </li>
-                                                <li class="border-tp"><p><strong>Status:</strong> Reviewer <img src="http://placehold.it/18x18" alt="placeholder"> <span class="js-info faded-text">Whats this?</span></p>
+                                                <li class="border-tp"><p><strong>Status:</strong> Reviewer <img src="/images/single-star.png" alt="placeholder"> <span class="js-info faded-text text-small">Whats this?</span></p>
                                                 </li>
                                                 <li class="border-tp"><p><strong>Member since:</strong>2014</p>
                                                 </li>
                                                 <li class="border-tp"><a href="">See all reviews</a>
                                                 </li>
-                                                <li class="border-tp border-bt"><p><strong>Organization:</strong>Sanford-Burnham Medical Research Institute</p>
+                                                <li class="border-tp border-bt"><p><strong>Organization:</strong> Sanford-Burnham Medical Research Institute</p>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-8">
                                             
-                                            <div class="ratings-review-detail">
+                                            <div class="ratings-review-detail lt-gr-bg pt-left">
                                                 <div class="row">
-                                                    <div class="col-md-12">
-                                                        <span>Rating: <strong>3.7</strong></span>
+                                                    <div class="col-md-12 landmark--half">
+                                                        <span class="panel-title panel-title--light">Rating: <strong>3.7 </strong><img class="ratings" src="/images/stars-large.png" alt="stars"></span>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12 ">
-                                                        <blockquote class="feature-quote landmark--half border-tp">
-                                                            Good, but think it has so much more potential <span class="end-quote"></span>
-                                                        </blockquote>
+                                                        <div class="border-tp border-bt">
+                                                            <blockquote class="feature-quote feature-quote--review landmark--half">
+                                                                Good, but think it has so much more potential <span class="end-quote"></span>
+                                                            </blockquote>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <dl class="dl-horizontal border-tp">
-                                                            <dt>Ease of use</dt>
-                                                            <dd><img src="http://placehold.it/110x21" alt="placeholder">
-                                                            </dd>
-                                                            <dt>After sales service</dt>
-                                                            <dd><img src="http://placehold.it/110x21" alt="placeholder">
-                                                            </dd>
-                                                            <dt>Value for money</dt>
-                                                            <dd><img src="http://placehold.it/110x21" alt="placeholder">
-                                                            </dd>
-                                                        </dl>   
+                                                       <dl class="dl-horizontal dl-horizontal--left">
+                                                           <dt>Ease of use</dt>
+                                                           <dd><img src="/images/stars-medium.png" alt="stars">
+                                                           </dd>
+                                                           <dt>After sales service</dt>
+                                                           <dd><img src="/images/stars-medium.png" alt="stars">
+                                                           </dd>
+                                                           <dt>Value for money</dt>
+                                                           <dd><img src="/images/stars-medium.png" alt="stars">
+                                                           </dd>
+                                                       </dl>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <ul>
+                                                        <ul class="border-tp list-no-bullet list-plain">
                                                             <li><p><strong>Review date:</strong> 17 Feb 2014</p></li>
                                                             <li><p><strong>Application Area:</strong>FX</p></li>
                                                             <li><p>Biomek® 4000 Laboratory Automation Workstation</p></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="col-md-12">
-                                                        <blockquote>"Our lab had a throughput of more than 30,000 tubes in four months and the printer did not have a single breakdown during this period. The service during installation and routine work is outstanding. The software leaves a lot of freedom for genuine processes. Once you have adapted it to your workflow this product is of great value."</blockquote>
+                                                    <div class="col-md-12 landmark">
+                                                        <blockquote class="quote-standard">"Our lab had a throughput of more than 30,000 tubes in four months and the printer did not have a single breakdown during this period. The service during installation and routine work is outstanding. The software leaves a lot of freedom for genuine processes. Once you have adapted it to your workflow this product is of great value."</blockquote>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-12">
+                                                    <div class="col-md-12 landmark--half">
                                                         <div class="panel-share">
                                                             <ul class="list-inline">
                                                                 <li><a href=""><img src="http://placehold.it/90x23" alt="placeholder"></a></li>
@@ -1674,10 +1683,10 @@
                                                     <div class="col-md-12">
                                                         <div class="row">
                                                             <div class="col-md-8">
-                                                                <p>Was this review helpful? <a href="" class="button button-grey">Yes</a></p>
+                                                                <p><strong>Was this review helpful?</strong> <a href="#" class="button button--dk-grey button--small">Yes</a></p>
                                                             </div>
                                                             <div class="col-md-4">
-                                                                <a href="" class="button button--green">Read 3 Reviews</a>
+                                                                <a href="" class="button button--green button--review">Read 3 Reviews</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1700,40 +1709,40 @@
                         <div class="col-md-12 product-description">
                            
                            <div class="row">
-                                <div class="col-md-12"><h2 class="panel-title title-border">Description</h2></div>
+                                <div class="col-md-12 landmark--half"><h2 class="panel-title title-border">Description</h2></div>
                             </div> 
 
                             <div class="row">
-                                <div class="col-md-12">
-                                    <p><strong>The Scinomix SCI-PRINT VX2 is a small footprint multifunction vial handling instrument.</strong></p>
-                                    <p>Its primary function is as a vial labeler. Other options include uncapping and capping (Screw top lids), filling and cherry picking. There is an optional built in 2D barcode scanner to ensure the vials are correctly placed in the racks (Matrix and Micronic). The SCI-PRINT VX2 is compatible with Matrix and Micronic 2D vials. It will also handle vials from 0.5 to 50ml in size. The SCI-PRINT VX2 will operate stand alone or can be integrated as part of a larger automated system.</p>
-                                    <p><strong>Features &amp; Benefits</strong></p>
+                                <div class="col-md-12 landmark">
+                                    <p class="landmark"><strong>The Scinomix SCI-PRINT VX2 is a small footprint multifunction vial handling instrument.</strong></p>
+                                    <p class="landmark">Its primary function is as a vial labeler. Other options include uncapping and capping (Screw top lids), filling and cherry picking. There is an optional built in 2D barcode scanner to ensure the vials are correctly placed in the racks (Matrix and Micronic). The SCI-PRINT VX2 is compatible with Matrix and Micronic 2D vials. It will also handle vials from 0.5 to 50ml in size. The SCI-PRINT VX2 will operate stand alone or can be integrated as part of a larger automated system.</p>
+                                    <p class="landmark--half"><strong>Features &amp; Benefits</strong></p>
                                     <ul class="list-features list-no-bullet">
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Small footprint saves valuable space in the lab</p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Increases productivity and efficiency in the lab</p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Provides valuable walk away time to attend to other important tasks</p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Eliminates human error</p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Improves barcode scanning process</p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Files imported according to your region and language settings</p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Can handle multiple tube types with same </p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>Supports Unicode</p>
                                         </li>
-                                        <li>
+                                        <li class="list-square-bullet">
                                             <p>CE certified</p>
                                         </li>
                                     </ul>
@@ -1747,9 +1756,9 @@
                                    <h2 class="panel-title title-border">Related Application Notes and Methods</h2> 
                                    <div class="row">
                                        <div class="col-md-4">
-                                           <h3>Filter by application</h3>
-                                           <ul class="list-no-bullet text-right">
-                                               <li><span>Neuroscience</span></li>
+                                           <h3 class="panel-title faded-text text-right">Filter by application</h3>
+                                           <ul class="list-no-bullet text-right filter-list">
+                                               <li><span class="active">Neuroscience</span></li>
                                                <li><span>Dioxins</span></li>
                                                <li><span>Cancer</span></li>
                                                <li><span>Food Fraud</span></li>
@@ -1757,16 +1766,16 @@
                                                <li><span>Other</span></li>
                                            </ul>
                                        </div>
-                                       <div class="col-md-8">
-                                           <ul class="list-no-bullet">
-                                               <li><span>Corgenix Announces New Grants to Advance Work on Ebola Test Kit </span></li>
-                                               <li class="border-tp"><span>Phenomenex Adds Versatile F5 (Pentafluorophenyl) Columns with Unmatched Reproducibility to Kinetex® HPLC/UHPLC Core-Shell Line</span></li>
-                                               <li class="border-tp"><span>Phenomenex to Highlight New Kinetex® F5 (Pentafluorophenyl) and EVO C18 Core-Shell HPLC/UHPLC Columns at Pittcon</span></li>
-                                               <li class="border-tp"><span>Corgenix Announces New Grants to Advance Work on Ebola Test Kit </span></li>
-                                               <li class="border-tp"><span>Phenomenex Adds Versatile F5 (Pentafluorophenyl) Columns with Unmatched Reproducibility to Kinetex® HPLC/UHPLC Core-Shell Line</span></li>
-                                               <li class="border-tp"><span>Phenomenex to Highlight New Kinetex® F5 (Pentafluorophenyl) and EVO C18 Core-Shell HPLC/UHPLC Columns at Pittcon</span></li>
+                                       <div class="col-md-8 border-l">
+                                           <ul class="list-no-bullet list-primary">
+                                               <li class="icon-list-item"><img class="list-icon" src="/images/icon-notes.png" alt="icon"><span>Corgenix Announces New Grants to Advance Work on Ebola <br>Test Kit </span></li>
+                                               <li class="border-tp icon-list-item"><img class="list-icon" src="/images/icon-play.png" alt="icon"><span>Phenomenex Adds Versatile F5 (Pentafluorophenyl) Columns with Unmatched Reproducibility to Kinetex® HPLC/UHPLC Core-Shell Line</span></li>
+                                               <li class="border-tp icon-list-item"><img class="list-icon" src="/images/icon-notes.png" alt="icon"><span>Phenomenex to Highlight New Kinetex® F5 (Pentafluorophenyl) and EVO C18 Core-Shell HPLC/UHPLC Columns at Pittcon</span></li>
+                                               <li class="border-tp icon-list-item"><img class="list-icon" src="/images/icon-notes.png" alt="icon"><span>Corgenix Announces New Grants to Advance Work on <br>Ebola Test Kit </span></li>
+                                               <li class="border-tp icon-list-item"><img class="list-icon" src="/images/icon-play.png" alt="icon"><span>Phenomenex Adds Versatile F5 (Pentafluorophenyl) Columns with Unmatched Reproducibility to Kinetex® HPLC/UHPLC Core-Shell Line</span></li>
+                                               <li class="border-tp icon-list-item border-bt"><img class="list-icon" src="/images/icon-notes.png" alt="icon"><span>Phenomenex to Highlight New Kinetex® F5 (Pentafluorophenyl) and EVO C18 Core-Shell HPLC/UHPLC Columns at Pittcon</span></li>
                                            </ul>
-                                           <a href="#" class="button button-grey button-large">Load More</a>
+                                           <a href="#" class="button button--grey button--large">Load More</a>
                                        </div>
                                    </div>
                                 </div><!--\ Related notes -->
@@ -1953,6 +1962,7 @@
                         </div><!--\ Related products -->
                     </div>
                 </div>
+                
                 <!--\ left col -->
 
                 <!-- Right col -->
@@ -2042,10 +2052,9 @@
                 </div>
                 <!--\ Right col -->
             </div>
-        </div>
+        
 
     </div>
-
 
     <!-- Footer -->
     <footer id="footer">
@@ -2237,6 +2246,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/custom.js"></script>
+    <script src="dist/js/easyzoom.js"></script>
+    <script src="dist/js/jquery.flexslider-min.js"></script>
 </body>
 
 </html>
