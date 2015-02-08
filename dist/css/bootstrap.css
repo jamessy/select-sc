@@ -7455,13 +7455,46 @@ iframe {
 .breadcrumb a {
   color: #8a8989;
 }
+.product-view {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .product-view {
+    text-align: left;
+  }
+}
 .product-meta .ratings {
   margin: -11px 10px 0px 10px;
+}
+.product-review {
+  text-align: center;
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .product-review {
+    margin-top: 0px;
+  }
+}
+.product-review .button {
+  margin: 20px 0;
+}
+.product-images {
+  width: 296px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-main-image {
   width: 270px;
   min-height: 270px;
   padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .product-main-image {
+    text-align: left;
+  }
 }
 .product-thumbs {
   padding-left: 24px!important;
@@ -7494,19 +7527,44 @@ iframe {
   display: inline-block;
   margin-top: -5px;
 }
+.product-review .panel-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .product-review .panel-title {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+}
 .large-ratings-wrap {
-  width: 42%;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .large-ratings-wrap {
+    width: 42%;
+  }
 }
 .dl-horizontal--left {
   margin-bottom: 0px;
 }
 .dl-horizontal--left dt {
-  text-align: left!important;
-  width: 140px;
   line-height: 1.7em;
 }
+@media (min-width: 992px) {
+  .dl-horizontal--left dt {
+    text-align: left!important;
+    width: 140px;
+  }
+}
 .dl-horizontal--left dd {
-  margin-left: 160px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .dl-horizontal--left dd {
+    margin-left: 160px;
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 992px) {
   .button-review {
@@ -7514,7 +7572,12 @@ iframe {
   }
 }
 .ratings-review-detail {
-  padding: 30px;
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  .ratings-review-detail {
+    padding: 30px;
+  }
 }
 .ratings-review-detail .ratings {
   margin-left: 8px;
@@ -7535,13 +7598,26 @@ iframe {
 .ratings-review-detail .button--review {
   margin: 6px 0 0 0;
 }
+.panel-share li {
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .panel-share li {
+    margin-bottom: 0px;
+  }
+}
 .filter-list li {
   margin-bottom: 3px;
 }
 .feature-quote--review {
   padding-left: 48px;
-  padding-right: 16px;
+  padding-right: 42px;
   text-indent: 0px;
+}
+@media (min-width: 992px) {
+  .feature-quote--review {
+    padding-right: 16px;
+  }
 }
 .feature-quote--review .end-quote {
   position: absolute!important;
@@ -7559,9 +7635,21 @@ p.landmark--half,
 }
 .product-overview-wrap .button--product {
   margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .product-overview-wrap .button--product {
+    margin-bottom: 0px;
+  }
 }
 .product-overview-wrap .sci-logo {
   margin-top: -5px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .product-overview-wrap .sci-logo {
+    margin-bottom: 0px;
+  }
 }
 .product-overview-wrap .product-overview-bottom {
   padding: 10px 15px;
@@ -7591,6 +7679,12 @@ p.landmark--half,
 .related-products-slider .flex-direction-nav a {
   margin: -42px 0 0;
   top: 50%;
+  display: none;
+}
+@media (min-width: 992px) {
+  .related-products-slider .flex-direction-nav a {
+    display: inline-block;
+  }
 }
 .related-products-slider .slide {
   width: 198px!important;
@@ -7645,7 +7739,12 @@ a.button--orange:hover {
 }
 .button--product {
   padding: 15px 50px!important;
-  font-size: 20px!important;
+  font-size: 16px!important;
+}
+@media (min-width: 992px) {
+  .button--product {
+    font-size: 20px!important;
+  }
 }
 .button--grey {
   background-color: #ebebeb;
@@ -7768,9 +7867,14 @@ a.button--dk-grey:hover {
   width: 10px;
   height: 10px;
   left: 0px;
-  top: 50%;
-  margin-top: -5px;
+  top: 5px;
   background-color: #45cb6c;
+}
+@media (min-width: 992px) {
+  .list-square-bullet:before {
+    top: 50%;
+    margin-top: -5px;
+  }
 }
 .icon-list-item {
   position: relative;
@@ -7925,6 +8029,11 @@ a.button--dk-grey:hover {
 }
 .active {
   color: #45cb6c;
+}
+@media (min-width: 992px) {
+  .pull-right-md {
+    float: right!important;
+  }
 }
 /* Custom Grid 
 ===============================================*/

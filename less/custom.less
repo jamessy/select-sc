@@ -1001,6 +1001,14 @@ iframe{
     }
 }
 
+.product-view{
+    text-align: center;
+
+    @media(min-width:@grid-float-breakpoint){
+        text-align: left;
+    }
+}
+
 .product-meta{
 
     .ratings{
@@ -1008,10 +1016,37 @@ iframe{
     }
 }
 
+.product-review{
+    text-align: center;
+    margin-top: @line-height-computed;
+
+    @media(min-width:@grid-float-breakpoint){
+        margin-top: 0px;
+    }
+
+    .button{
+        margin:20px 0;
+    }
+    
+}
+
+.product-images{
+    width: 296px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .product-main-image{
     width: 270px;
     min-height: 270px;
     padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    @media(min-width:@grid-float-breakpoint){
+        text-align: left;
+    }
 }
 
 .product-thumbs{
@@ -1053,23 +1088,45 @@ iframe{
         display: inline-block;
         margin-top: -5px;
     }
+
+    .panel-title{
+        text-align: center;
+        margin-bottom: @line-height-computed;
+
+        @media(min-width:@grid-float-breakpoint){
+            text-align: left;
+            margin-bottom: 0px;
+        }
+    }
 }
 
 .large-ratings-wrap{
-    width:42%;
+    text-align: center;
+
+    @media(min-width:@grid-float-breakpoint){
+        width:42%;
+    }
 }
 
 .dl-horizontal--left{
     margin-bottom: 0px;
 
     dt{
-        text-align: left!important;    
-        width:140px;
         line-height: 1.7em;
+
+        @media(min-width:@grid-float-breakpoint){
+            text-align: left!important;    
+            width:140px;
+        }
     }
 
     dd{
-        margin-left: 160px;
+        margin-bottom: @line-height-computed;
+
+        @media(min-width:@grid-float-breakpoint){
+            margin-left: 160px;
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -1082,7 +1139,11 @@ iframe{
 }
 
 .ratings-review-detail{
-    padding:30px;
+    padding:10px;
+
+    @media(min-width:@grid-float-breakpoint){
+        padding:30px;
+    }
 
     .ratings{
         margin-left: 8px;
@@ -1109,9 +1170,14 @@ iframe{
     }
 }
 
-.product-related-notes{
+.panel-share{
+    li{
+        margin-bottom: 10px;
 
-
+        @media(min-width:@grid-float-breakpoint){
+            margin-bottom: 0px;
+        }
+    }
 }
 
 .filter-list{
@@ -1122,8 +1188,12 @@ iframe{
 
 .feature-quote--review{
     padding-left:48px;
-    padding-right:16px;
+    padding-right:42px;
     text-indent: 0px;
+
+    @media(min-width:@grid-float-breakpoint){
+        padding-right:16px;
+    }
 
     .end-quote{
         position: absolute!important;
@@ -1146,10 +1216,21 @@ p.landmark--half,.panel-title.landmark--half{
 
     .button--product{
         margin-right: 20px;
+        margin-bottom: @line-height-computed;
+
+        @media(min-width:@grid-float-breakpoint){
+            margin-bottom: 0px;
+        }
     }
 
     .sci-logo{
         margin-top: -5px;
+
+        margin-bottom: @line-height-computed;
+
+        @media(min-width:@grid-float-breakpoint){
+            margin-bottom: 0px;
+        }
     }
 
     .product-overview-bottom{
@@ -1191,6 +1272,11 @@ p.landmark--half,.panel-title.landmark--half{
     .flex-direction-nav a{
         margin: -42px 0 0;
         top: 50%;
+        display: none;
+
+        @media(min-width:@grid-float-breakpoint){
+            display: inline-block;
+        }
     }
 
     .slide{
@@ -1253,7 +1339,11 @@ p.landmark--half,.panel-title.landmark--half{
 
 .button--product{
     padding:15px 50px!important;
-    font-size: 20px!important; 
+    font-size: 16px!important; 
+
+    @media(min-width:@grid-float-breakpoint){
+        font-size: 20px!important; 
+    }
 }
 
 .button--grey{
@@ -1402,9 +1492,13 @@ p.landmark--half,.panel-title.landmark--half{
         width:10px;
         height: 10px;
         left:0px;
-        top:50%;
-        margin-top: -5px;
+        top:5px;
         background-color: @green;
+
+        @media(min-width:@grid-float-breakpoint){
+            top:50%;
+            margin-top: -5px;
+        }
     }
 }
 
@@ -1585,6 +1679,13 @@ p.landmark--half,.panel-title.landmark--half{
 
 .active{
     color:@green;
+}
+
+.pull-right-md{
+   
+   @media(min-width:@grid-float-breakpoint){
+       float:right!important;
+   }
 }
 
 

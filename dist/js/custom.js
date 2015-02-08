@@ -73,7 +73,8 @@ $(document).ready(function(){
 	    minItems: 3,
 	    maxItems: 3,
 	    move: 1,
-	    touch: false,
+	    useCSS: true,     
+	    touch: true,
 	    prevText: "",
 	    nextText: ""
 	    // itemWidth:2,
@@ -114,7 +115,8 @@ $(document).ready(function(){
 	    minItems: 4,
 	    maxItems: 4,
 	    move: 1,
-	    touch: false,
+	    useCSS: true,     
+	    touch: true,
 	    prevText: "",
 	    nextText: ""
 	    // itemWidth:2,
