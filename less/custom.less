@@ -1001,6 +1001,10 @@ iframe{
     }
 }
 
+.product-title{
+    margin-top:@line-height-computed;
+}
+
 .product-view{
     text-align: center;
 
@@ -1013,6 +1017,10 @@ iframe{
 
     .ratings{
         margin:-11px 10px 0px 10px;
+    }
+
+    .featured-by{
+        line-height: 2em;
     }
 }
 
@@ -1217,15 +1225,10 @@ p.landmark--half,.panel-title.landmark--half{
     .button--product{
         margin-right: 20px;
         margin-bottom: @line-height-computed;
-
-        @media(min-width:@grid-float-breakpoint){
-            margin-bottom: 0px;
-        }
     }
 
     .sci-logo{
         margin-top: -5px;
-
         margin-bottom: @line-height-computed;
 
         @media(min-width:@grid-float-breakpoint){
@@ -1236,6 +1239,13 @@ p.landmark--half,.panel-title.landmark--half{
     .product-overview-bottom{
         padding:10px 15px;
         margin-top: 1px;
+    }
+}
+
+.product-information{
+
+    @media(min-width:@grid-float-breakpoint)and (max-width:1200px){
+        width: 440px;
     }
 }
 
@@ -1294,6 +1304,14 @@ p.landmark--half,.panel-title.landmark--half{
             padding-right: 20px;
         }
     }
+}
+
+.product-content{
+    padding-top: 0px!important;
+}
+
+.product-content-left{
+    margin-top: @line-height-computed;
 }
 
 

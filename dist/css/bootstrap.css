@@ -4491,8 +4491,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444444;
 }
 .breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 20px;
+  padding: 15px 0px 0px;
+  margin-bottom: 10px;
   list-style: none;
   background-color: transparent;
   border-radius: 4px;
@@ -7455,6 +7455,9 @@ iframe {
 .breadcrumb a {
   color: #8a8989;
 }
+.product-title {
+  margin-top: 20px;
+}
 .product-view {
   text-align: center;
 }
@@ -7465,6 +7468,9 @@ iframe {
 }
 .product-meta .ratings {
   margin: -11px 10px 0px 10px;
+}
+.product-meta .featured-by {
+  line-height: 2em;
 }
 .product-review {
   text-align: center;
@@ -7637,11 +7643,6 @@ p.landmark--half,
   margin-right: 20px;
   margin-bottom: 20px;
 }
-@media (min-width: 992px) {
-  .product-overview-wrap .button--product {
-    margin-bottom: 0px;
-  }
-}
 .product-overview-wrap .sci-logo {
   margin-top: -5px;
   margin-bottom: 20px;
@@ -7654,6 +7655,11 @@ p.landmark--half,
 .product-overview-wrap .product-overview-bottom {
   padding: 10px 15px;
   margin-top: 1px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .product-information {
+    width: 440px;
+  }
 }
 .product-overview .image-wrap {
   margin: 0px 0 18px;
@@ -7698,6 +7704,12 @@ p.landmark--half,
 .related-products-slider .slide .button {
   padding-left: 20px;
   padding-right: 20px;
+}
+.product-content {
+  padding-top: 0px!important;
+}
+.product-content-left {
+  margin-top: 20px;
 }
 /* Classes 
 ===============================================*/
