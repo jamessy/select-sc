@@ -7479,6 +7479,7 @@ iframe {
 @media (min-width: 992px) {
   .product-review {
     margin-top: 0px;
+    text-align: left;
   }
 }
 .product-review .button {
@@ -7509,7 +7510,20 @@ iframe {
   width: 270px;
 }
 .product-thumbs li {
+  overflow: hidden;
   width: 75px!important;
+}
+.product-thumbs li:hover > img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.product-thumbs li img {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 .js-slide-thumb {
   cursor: pointer;
@@ -7582,7 +7596,7 @@ iframe {
 }
 @media (min-width: 992px) {
   .ratings-review-detail {
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
   }
 }
 .ratings-review-detail .ratings {
@@ -7639,6 +7653,14 @@ p.landmark--half,
 .panel-title.landmark--half {
   margin-bottom: 10px !important;
 }
+.product-overview-wrap {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .product-overview-wrap {
+    text-align: left;
+  }
+}
 .product-overview-wrap .button--product {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -7646,15 +7668,27 @@ p.landmark--half,
 .product-overview-wrap .sci-logo {
   margin-top: -5px;
   margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 992px) {
   .product-overview-wrap .sci-logo {
     margin-bottom: 0px;
+    display: inline;
   }
 }
 .product-overview-wrap .product-overview-bottom {
   padding: 10px 15px;
   margin-top: 1px;
+}
+.product-overview-wrap .product-overview {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .product-overview-wrap .product-overview {
+    text-align: left;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .product-information {
